@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Delete Data",
+      "program": "${workspaceFolder}/seeder.js",
+      "skipFiles": ["<node_internals>/**"],
+      "args": ["-d"],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Seed Data",
+      "program": "${workspaceFolder}/seeder.js",
+      "skipFiles": ["<node_internals>/**"],
+      "args": ["-i"],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}\\server.js",
+      "console": "integratedTerminal"
+    }
+  ]
+}
